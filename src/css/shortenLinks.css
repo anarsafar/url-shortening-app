@@ -1,87 +1,127 @@
 form {
-    background: url(../images/bg-shorten-desktop.svg) no-repeat var(--dark-violet);
-    padding: 2.7rem 1.7rem;
-    border-radius: 12px;
+  background: url(../images/bg-shorten-desktop.svg) no-repeat var(--dark-violet);
+  padding: 2.7rem 1.7rem;
+  border-radius: 12px;
+  position: relative;
 }
 
 .shorten-container {
-    position: relative;
-    top: -4rem;
+  position: relative;
+  top: -4rem;
 }
 
 .error-msg {
-    position: absolute;
-    bottom: 10px;
-    left: 1.7rem;
-    padding: 0;
-    margin-top: 5px;
-    font-style: italic;
-    color: var(--red);
-    font-weight: 500;
-    font-size: 13px;
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  padding: 0;
+  font-style: italic;
+  color: var(--red);
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .true {
-    display: block;
+  display: block;
 }
 
 .false {
-    display: none;
+  display: none;
 }
 
 input {
-    border: none;
-    width: 80%;
-    padding: 1rem;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
+  border: none;
+  width: 80%;
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 form .btn {
-    border-radius: 6px !important;
-    padding: 0.9rem 1.7rem;
-    width: 18%;
-    margin-left: 1rem;
+  border-radius: 6px !important;
+  padding: 1.1rem 1.7rem;
+  width: 18%;
+  margin-left: 1rem;
 }
 
 .isEmpty {
-    border: 2px solid var(--red);
-    color: var(--red);
+  border: 2px solid var(--red);
+  color: var(--red);
 }
 
 .isEmpty::placeholder {
-    color: var(--red);
+  color: var(--red);
+}
+
+/* Loading animation */
+.loading {
+  width: 3.75em;
+  height: 3.75em;
+  margin: 1rem auto 0;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+svg {
+  width: 3.75em;
+  animation: 1.5s spin ease infinite;
+}
+
+.ring {
+  fill: none;
+  stroke: hsla(256, 26%, 33%, 0.3);
+  stroke-width: 2;
+}
+
+.ball {
+  fill: #3b3054;
+  stroke: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 950px) {
-    form .btn {
-        width: 17%;
-    }
+  form .btn {
+    width: 17%;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    form .btn {
-        padding: 0.9rem 1rem;
-    }
+  form .btn {
+    padding: 0.9rem 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    input {
-        width: 100%;
-    }
-    form {
-        padding: 1rem;
-    }
-    form .btn {
-        width: 100%;
-        margin: 10px 0;
-    }
-    form {
-        background: url(../images/bg-shorten-mobile.svg) no-repeat top right var(--dark-violet);
-    }
+  input {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  form {
+    padding: 1.7rem 1rem 1rem;
+  }
+  form .btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0.8rem 1.7rem;
+  }
+  form {
+    background: url(../images/bg-shorten-mobile.svg) no-repeat top right
+      var(--dark-violet);
+  }
+  .error-msg {
+    bottom: 4px;
+  }
 }

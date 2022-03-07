@@ -17,26 +17,26 @@ const Footer = () => {
                 <div>
                     <p>Features</p>
                     <ul>
-                        <li><a href="#">Link Shortening</a></li>
-                        <li><a href="#">Branded Links</a></li>
-                        <li><a href="#">Analytics</a></li>
+                        <li><span className='link'>Link Shortening</span></li>
+                        <li><span className='link'>Branded Links</span></li>
+                        <li><span className='link'>Analytics</span></li>
                     </ul>
                 </div>
                 <div>
                     <p>Resources</p>
                     <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Developers</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><span className='link'>Blog</span></li>
+                        <li><span className='link'>Developers</span></li>
+                        <li><span className='link'>Support</span></li>
                     </ul>
                 </div>
                 <div>
                     <p>Company</p>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><span className='link'>About</span></li>
+                        <li><span className='link'>Our Team</span></li>
+                        <li><span className='link'>Careers</span></li>
+                        <li><span className='link'>Contact</span></li>
                     </ul>
                 </div>
             </div>

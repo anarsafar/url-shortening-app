@@ -27,6 +27,7 @@
 
 .left .btn {
     border-radius: 4px;
+    padding: .7rem 2.2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -43,6 +44,7 @@
     .orginal {
         width: 100%;
         overflow: hidden;
+        border-bottom: thin solid rgb(236, 230, 230);
     }
     .left .btn {
         width: 100%;

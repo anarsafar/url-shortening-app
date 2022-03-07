@@ -43,12 +43,13 @@ img {
     border: none;
     cursor: pointer;
     background-color: var(--cyan);
-    padding: 8px 1.5rem;
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    border-radius: 1rem;
     transition: 0.4s ease-in;
+    padding: .9rem 2.3rem;
+    font-size: 1rem;
+    border-radius: 2rem;
 }
 
 .btn:focus {
@@ -81,5 +82,8 @@ img {
     .container {
         max-width: 100%;
         padding: 0 2rem;
+    }
+    .btn{
+     
     }
 }

@@ -4,7 +4,6 @@ import '../css/header.css'
 
 class Header extends Component {
     state={
-        change:'change',
         isActive:false
     }
     _handleToggle(){
@@ -13,7 +12,7 @@ class Header extends Component {
         })
     }    
     render(){
-        const {isActive ,change } = this.state
+        const {isActive } = this.state
         return (
         <header className="container">
             <div className="left-header">
@@ -22,18 +21,18 @@ class Header extends Component {
             <div className={isActive ? 'right-header visible' : 'right-header hidden'}>
             <nav>
                  <ul>
-                     <li><a href="#">Features</a></li>
-                     <li><a href="#">Pricing</a></li>
-                     <li><a href="#">Resources</a></li>
+                     <li><span className='link'>Features</span></li>
+                     <li><span className='link'>Pricing</span></li>
+                     <li><span className='link'>Resources</span></li>
                  </ul>
              </nav>
              <div className="menu-line"></div>
             <div className="buttons">
-                 <a href="#">Login</a>
+                 <span className='link'>Login</span>
                  <button className="btn">Sign up</button>
              </div>
             </div>
-            <div className={isActive ? change + " " + 'hamburger' : 'hamburger'} 
+            <div className={isActive ? 'change hamburger' : 'hamburger'} 
                  onClick={()=>this._handleToggle()}>
                 <div className="bar1"></div>
                 <div className="bar2"></div>
