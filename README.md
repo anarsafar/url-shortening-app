@@ -15,4 +15,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Live Demo
 
-[url-shortening-app-demo](https://anarseferrov.github.io/url-shortening-app/)
+[url-shortening-app-demo](https://ianarseferov.github.io/url-shortening-app/)
